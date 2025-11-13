@@ -51,11 +51,11 @@ const workerConfig: WorkerConfig = {
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
-      target: 'https://example.com',
+      target: 'https://geekswg.js.cool',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: '欢迎访问，毕少侠也在江湖',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://example.com',
+      statusPageLink: 'https://geekswg.js.cool',
       // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true
       hideLatencyChart: false,
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
@@ -85,6 +85,7 @@ const workerConfig: WorkerConfig = {
       name: '主页',
       method: 'GET',
       target: 'https://home.geekswg.dpdns.org',
+      statusPageLink: 'https://home.geekswg.dpdns.org',
       tooltip: '欢迎访问，毕少侠的主页',
     },
     {
@@ -92,21 +93,23 @@ const workerConfig: WorkerConfig = {
       name: 'libretv影视',
       method: 'GET',
       target: 'https://libretv.geekswg.dpdns.org',
-      tooltip: '欢迎访问，libretv影视',
+      statusPageLink: 'https://libretv.geekswg.dpdns.org',
+      tooltip: '欢迎访问，libretv影视，实现观影自由',
     },
     {
       id: 'moontv',
       name: 'moontv影视',
       method: 'GET',
       target: 'https://moontv.geekswg.dpdns.org',
-      tooltip: '欢迎访问，libretv影视',
+      tooltip: '欢迎访问，moontv影视,实现观影自由',
     },
     {
       id: 'waline',
       name: 'waline评论',
       method: 'GET',
       target: 'https://waline.geekswg.dpdns.org',
-      tooltip: '欢迎访问，libretv影视',
+      statusPageLink: 'https://waline.geekswg.dpdns.org',
+      tooltip: '欢迎访问，waline',
     },
     
 
@@ -116,6 +119,7 @@ const workerConfig: WorkerConfig = {
       name: 'Github',
       method: 'GET',
       target: 'https://github.com',
+      statusPageLink: 'https://github.com/geekswg',
       tooltip: '欢迎访问，Github',
     },
     {
@@ -123,6 +127,7 @@ const workerConfig: WorkerConfig = {
       name: 'CloudFlare',
       method: 'GET',
       target: 'https://cloudflare.com',
+      statusPageLink: 'https://cloudflare.com',
       tooltip: '欢迎访问，CloudFlare',
     },
     {
@@ -130,6 +135,7 @@ const workerConfig: WorkerConfig = {
       name: 'Vercel',
       method: 'GET',
       target: 'https://vercel.com',
+      statusPageLink: 'https://vercel.com',
       tooltip: '欢迎访问，Vercel',
     },
     // Example TCP Monitor
