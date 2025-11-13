@@ -84,6 +84,7 @@ const workerConfig: WorkerConfig = {
       name: 'moontv影视',
       method: 'GET',
       target: 'https://moontv.geekswg.dpdns.org',
+      statusPageLink: 'https://moontv.geekswg.dpdns.org',
       tooltip: '欢迎访问，moontv影视,实现观影自由',
     },
     {
